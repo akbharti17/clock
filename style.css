@@ -1,0 +1,76 @@
+.clock{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	display: flex;
+	margin: 0 auto;
+	border-radius: 50%;
+  box-shadow: 3px 3px 5px 6px #ccc;
+	background-size: cover;
+	border: 2px solid;
+	background-image: url("19-199115_clock-without-hands-png.png");
+}
+.clock::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.second{
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 4px;
+  height: 40%;
+  background-color: red;
+  transform: translateX(-50%) rotate(90deg);
+  transform-origin: bottom;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.minute{
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  background-color: #000;
+  width: 3px;
+  height: 35%;
+  transform: translateX(-50%) rotate(45deg);
+  transform-origin: bottom;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.hour{
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  background-color: #000;
+  width: 4px;
+  height: 25%;
+  transform: translateX(-50%) rotate(115deg);
+  transform-origin: bottom;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.digital{
+  width: 30%;
+  height: 30px;
+  margin: 0 auto;
+  font-weight: bold;
+  background-color: #1a1a00;
+  color: #00ff00;
+  box-shadow: 10px -10px 20px #CCC;
+  border-radius: 25px;
+  font-family: 'Major Mono Display', monospace;
+  padding: 25px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 40px;
+  border: 1px solid;
+}
